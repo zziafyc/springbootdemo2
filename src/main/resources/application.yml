@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://192.168.1.196:1433;DatabaseName=FaceVocal
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: WebUser
+    password: Webuser@123
+  http:
+      multipart:
+          enabled: true
+          max-file-size: 30MB
+          max-request-size: 100MB
+server:
+  port: 8080
+  context-path: /springbootdemo2
+mybatis:
+    mapper-locations: mapper/*.xml

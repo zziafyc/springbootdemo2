@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhongyong.springbootdemo2.mapper.UserMapper">
+
+    <select id="selectByStaffId" resultType="com.zhongyong.springbootdemo2.model.Users">
+        select id ,staff_id AS staffId,name,face_info AS faceInfoe from users
+        where staff_id = #{staffId}
+    </select>
+
+</mapper>
